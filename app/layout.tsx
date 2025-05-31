@@ -25,7 +25,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-    <meta name="google-site-verification" content="pqWIIKUJxbJ_p7KYkbE4rMycxhFrAsTMnA2GmI7xyuI" />
       <body className={inter.className}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <AuthProvider>
