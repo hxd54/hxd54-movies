@@ -22,7 +22,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="text-xs md:text-sm text-muted-foreground text-center md:text-right">
-            &copy; {new Date().getFullYear()} Movie Mood. All rights reserved.
+            &copy; {new Date().getFullYear()} HXD Movies. All rights reserved.
           </div>
         </div>
       </div>
