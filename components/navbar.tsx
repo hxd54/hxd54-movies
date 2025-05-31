@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold px-4 py-2">
           <Film className="h-5 w-5 sm:h-6 sm:w-6" />
-          <span className="text-base sm:text-xl">Movie Mood</span>
+          <span className="text-base sm:text-xl">HXD Movies</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -109,7 +109,7 @@ export default function Navbar() {
               <SheetHeader className="mb-6">
                 <SheetTitle className="flex items-center gap-2">
                   <Film className="h-5 w-5" />
-                  Movie Mood
+                  HXD Movies
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-4 px-4">
