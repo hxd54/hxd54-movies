@@ -1,4 +1,4 @@
-# Movie Mood
+# HXD Movies
 
 HXD Movies is a web application that recommends the best movies tailored to your preferences and mood. Whether you're in the mood for an action-packed thriller, a heartwarming romance, or a mind-bending sci-fi, HXD Movies helps you discover the perfect film for your current vibe.
 
