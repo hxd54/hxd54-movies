@@ -27,21 +27,11 @@ export function ContactInfo() {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
               <MessageCircle className="h-5 w-5 text-primary" />
             </div>
-            <div className="space-y-1">
-              <h3 className="font-medium">Live Chat</h3>
-              <p className="text-sm text-muted-foreground">Chat with our team for immediate assistance.</p>
-              <p className="text-sm font-medium">Available 9 AM - 6 PM EST</p>
-            </div>
           </div>
 
           <div className="flex items-start gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
               <Clock className="h-5 w-5 text-primary" />
-            </div>
-            <div className="space-y-1">
-              <h3 className="font-medium">Response Time</h3>
-              <p className="text-sm text-muted-foreground">We typically respond to all inquiries within 24 hours.</p>
-              <p className="text-sm font-medium">Monday - Friday</p>
             </div>
           </div>
 
