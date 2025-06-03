@@ -25,20 +25,9 @@ export function ContactInfo() {
 
           <div className="flex items-start gap-4">
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-              <MessageCircle className="h-5 w-5 text-primary" />
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
-              <Clock className="h-5 w-5 text-primary" />
-            </div>
-          </div>
-
-          <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary/10">
               <MapPin className="h-5 w-5 text-primary" />
             </div>
+            
             <div className="space-y-1">
               <h3 className="font-medium">Location</h3>
               <p className="text-sm text-muted-foreground">Based in the land of a Thousand hills.</p>
