@@ -35,14 +35,17 @@ export default function Navbar() {
     setIsMenuOpen(false)
   }
 
-  const navLinks = [{ href: "/", label: "Home" }]
+  const navLinks = [
+    { href: "/", label: "Home" },
+    { href: "/contact", label: "Contact" },
+  ]
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2 text-xl font-bold px-4 py-2">
           <Film className="h-5 w-5 sm:h-6 sm:w-6" />
-          <span className="text-base sm:text-xl">HXD Movies</span>
+          <span className="text-base sm:text-xl">Movie Mood</span>
         </Link>
 
         {/* Desktop Navigation */}
@@ -51,7 +54,11 @@ export default function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`px-2 py-1 ${pathname === link.href ? "font-medium" : ""}`}
+              className={`px-3 py-2 rounded-md text-sm font-medium transition-colors hover:bg-accent hover:text-accent-foreground ${
+                pathname === link.href
+                  ? "bg-accent text-accent-foreground"
+                  : "text-muted-foreground hover:text-foreground"
+              }`}
             >
               {link.label}
             </Link>
@@ -109,7 +116,7 @@ export default function Navbar() {
               <SheetHeader className="mb-6">
                 <SheetTitle className="flex items-center gap-2">
                   <Film className="h-5 w-5" />
-                  HXD Movies
+                  Movie Mood
                 </SheetTitle>
               </SheetHeader>
               <nav className="flex flex-col gap-4 px-4">
@@ -117,7 +124,11 @@ export default function Navbar() {
                   <Link
                     key={link.href}
                     href={link.href}
-                    className={`text-lg px-2 py-1 ${pathname === link.href ? "font-medium" : ""}`}
+                    className={`text-lg px-3 py-2 rounded-md transition-colors hover:bg-accent hover:text-accent-foreground ${
+                      pathname === link.href
+                        ? "bg-accent text-accent-foreground font-medium"
+                        : "text-muted-foreground hover:text-foreground"
+                    }`}
                     onClick={closeMenu}
                   >
                     {link.label}
@@ -136,7 +147,7 @@ export default function Navbar() {
                     </div>
                     <Link
                       href="/admin"
-                      className="block w-full text-center py-2 mb-2 border rounded-md"
+                      className="block w-full text-center py-2 mb-2 border rounded-md hover:bg-accent transition-colors"
                       onClick={closeMenu}
                     >
                       Admin Dashboard
@@ -147,7 +158,7 @@ export default function Navbar() {
                     </Button>
                   </div>
                 ) : (
-                  <Button asChild className="mt-2" onClick={closeMenu}>
+                  <Button asChild className="mt-4" onClick={closeMenu}>
                     <Link href="/login">
                       <User className="mr-2 h-4 w-4" />
                       Login

@@ -12,10 +12,11 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "HXD Movies | Find the perfect movie for your mood",
+  title: "Movie Mood | Find the perfect movie for your mood",
   description: "Discover movies based on your current mood",
   keywords: "movies, mood, recommendations, film",
-  icons: { icon: "/favicon.ico"},
+  icons: { icon: "/favicon.ico" },
+    generator: 'v0.dev'
 }
 
 export default function RootLayout({
