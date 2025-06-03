@@ -8,7 +8,7 @@ export function ContactInfo() {
         <CardHeader>
           <CardTitle>Get in Touch</CardTitle>
           <CardDescription>
-            We'd love to hear from you. Here are the best ways to reach the Movie Mood team.
+            We'd love to hear from you. Here are the best ways to reach the HXD Movies team.
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -78,7 +78,7 @@ export function ContactInfo() {
           <div>
             <h4 className="font-medium mb-1">Is HXD Movies free to use?</h4>
             <p className="text-sm text-muted-foreground">
-              Yes, Movie Mood is completely free to use. We believe everyone deserves great movie recommendations.
+              Yes, HXD Movies is completely free to use. We believe everyone deserves great movie recommendations.
             </p>
           </div>
         </CardContent>
